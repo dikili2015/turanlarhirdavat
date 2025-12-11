@@ -5,18 +5,65 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Matkap Seti | Turanlar Hırdavat</title>
   <style>
-.product-detail img {
-  width: 100%;
-  max-width: 400px;  /* Resmin maksimum genişliği */
-  height: auto;       /* Oran korunacak şekilde yükseklik */
-  display: block;
-  margin: 0 auto;    /* Ortalanmış */
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-</style>
-
-  <link rel="stylesheet" href="../styles.css">
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background-color: #0074a2;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #005f7a;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      padding: 10px 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background-color: #00465a;
+    }
+    .product-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 300px;
+      padding: 15px;
+      text-align: center;
+      margin: 20px auto;
+    }
+    .product-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    .whatsapp-btn {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      background: #25D366;
+      color: white;
+      padding: 12px 16px;
+      font-size: 18px;
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
 
@@ -24,15 +71,22 @@
   <h1>Turanlar Hırdavat</h1>
 </header>
 
-<!-- WhatsApp Butonu -->
-<a href="https://wa.me/905318802637?text=Matkap%20Seti%20hakkında%20bilgi%20almak%20istiyorum." 
-   class="whatsapp-float" target="_blank">WhatsApp Sipariş</a>
+<nav>
+  <a href="index.html">Ana Sayfa</a>
+  <a href="el-aletleri.html">El Aletleri</a>
+  <a href="elektrikli-aletler.html">Elektrikli Aletler</a>
+  <a href="hirdavat-malzemeleri.html">Hırdavat Malzemeleri</a>
+  <a href="banyo-mutfak.html">Banyo - Mutfak</a>
+  <a href="boya-yapi-malzemeleri.html">Boya & Yapı Malzemeleri</a>
+  <a href="bahce-aletleri.html">Bahçe Aletleri</a>
+</nav>
 
-<section class="product-detail">
-  <h2>Matkap Seti</h2>
+<div class="product-card">
   <img src="images/Elektirikli_Aletler/EA_1.png" alt="Matkap Seti">
-  <p><strong>Fiyat:</strong> 1.000 TL</p>
-</section>
+  <h3>Matkap Seti</h3>
+  <p class="price"><strong>Fiyat:</strong> 1000 TL</p>
+  <a class="whatsapp-btn" href="https://wa.me/905318802637?text=Matkap%20Seti%20hakkında%20bilgi%20almak%20istiyorum." target="_blank">WhatsApp Sipariş</a>
+</div>
 
 </body>
 </html>
