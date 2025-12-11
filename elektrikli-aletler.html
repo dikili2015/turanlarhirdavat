@@ -9,77 +9,110 @@
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      background-color: #f5f5f5;
+      background-color: #eef2f3;
       color: #333;
     }
+
     header {
       background-color: #0074a2;
       color: white;
       padding: 20px;
       text-align: center;
+      font-size: 26px;
+      font-weight: bold;
     }
+
     nav {
       background-color: #005f7a;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
       gap: 15px;
-      padding: 10px 0;
+      padding: 12px 0;
     }
+
     nav a {
       color: white;
       text-decoration: none;
       font-weight: bold;
-      padding: 8px 12px;
-      border-radius: 5px;
-      transition: background 0.3s;
+      padding: 10px 16px;
+      border-radius: 6px;
+      transition: 0.3s;
     }
+
     nav a:hover {
       background-color: #00465a;
     }
 
-    /* Ürünleri yan yana dizen bölüm */
+    /* Ürün liste alanı */
     .product-list {
+      max-width: 1300px;
+      margin: 30px auto;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 20px;
-      padding: 20px;
+      gap: 25px;
+      padding: 10px;
     }
 
+    /* Ürün kart tasarımı */
     .product-card {
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
       width: 300px;
+      background: white;
       padding: 15px;
+      border-radius: 12px;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+      transition: 0.3s;
       text-align: center;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.18);
     }
 
     .product-card img {
       width: 100%;
-      height: auto;
-      border-radius: 8px;
+      height: 240px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 10px;
     }
 
+    .product-card h3 {
+      margin: 10px 0 5px 0;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .price {
+      font-size: 18px;
+      color: #444;
+      margin-bottom: 10px;
+    }
+
+    /* WhatsApp Butonu */
     .whatsapp-btn {
-      display: inline-block;
-      margin-top: 10px;
       background: #25D366;
       color: white;
       padding: 10px 14px;
       font-size: 16px;
-      border-radius: 8px;
       text-decoration: none;
+      border-radius: 10px;
       font-weight: bold;
+      display: inline-block;
+      transition: 0.2s;
     }
+
+    .whatsapp-btn:hover {
+      background: #1ebe5d;
+    }
+
   </style>
 </head>
 <body>
 
-<header>
-  <h1>Turanlar Hırdavat</h1>
-</header>
+<header>Turanlar Hırdavat</header>
 
 <nav>
   <a href="index.html">Ana Sayfa</a>
@@ -91,24 +124,23 @@
   <a href="bahce-aletleri.html">Bahçe Aletleri</a>
 </nav>
 
-<!-- Ürünler -->
 <div class="product-list">
 
-  <!-- Matkap 1 -->
+  <!-- Ürün 1 -->
   <div class="product-card">
     <img src="images/Elektirikli_Aletler/EA_1.png" alt="Matkap Seti">
     <h3>Matkap Seti</h3>
-    <p><strong>Fiyat:</strong> 1000 TL</p>
+    <p class="price"><strong>1000 TL</strong></p>
     <a class="whatsapp-btn"
        href="https://wa.me/905318802637?text=Matkap%20Seti%20hakkında%20bilgi%20almak%20istiyorum."
        target="_blank">WhatsApp Sipariş</a>
   </div>
 
-  <!-- Matkap 2 -->
+  <!-- Ürün 2 -->
   <div class="product-card">
-    <img src="images/Elektirikli_Aletler/EA_2.png" alt="4'lü Şarjlı Matkap Seti">
+    <img src="images/Elektirikli_Aletler/EA_2.png" alt="4'lü Matkap Seti">
     <h3>4'lü Şarjlı Matkap Seti</h3>
-    <p><strong>Fiyat:</strong> 4000 TL</p>
+    <p class="price"><strong>4000 TL</strong></p>
     <a class="whatsapp-btn"
        href="https://wa.me/905318802637?text=4lü%20Şarjlı%20Matkap%20Seti%20hakkında%20bilgi%20almak%20istiyorum."
        target="_blank">WhatsApp Sipariş</a>
